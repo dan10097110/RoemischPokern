@@ -5,8 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RoemischPokern"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Mitspieler" Height="257.56" Width="283.444" ResizeMode="CanMinimize" Loaded="Window_Loaded" Closing="Window_Closing">
     <Grid>
-        
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="183" Margin="184,10,0,0" VerticalAlignment="Top" Width="72"/>
+        <Button x:Name="button" Content="play" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="169" Click="button_Click"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,35,0,0" TextWrapping="Wrap" Text="max filled fields" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="97,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="82" Height="18" Text="0" TextChanged="textBox_TextChanged"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="18" Margin="97,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="82" IsReadOnly="True" Text="0"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="10,56,0,0" TextWrapping="Wrap" Text="points" VerticalAlignment="Top"/>
+        <CheckBox x:Name="checkBox" Content="Neu würfeln" HorizontalAlignment="Left" Margin="10,78,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="checkBox3" Content="Ignorieren" HorizontalAlignment="Left" Margin="10,138,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="checkBox2" Content="v neu würfeln" HorizontalAlignment="Left" Margin="10,118,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="checkBox1" Content="i neu würfeln" HorizontalAlignment="Left" Margin="10,98,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="checkBox4" Content="In benachbertes Feld" HorizontalAlignment="Left" Margin="10,158,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="checkBox5" Content="Joker" HorizontalAlignment="Left" Margin="10,178,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="184,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="11" TextAlignment="Right" Width="72"/>
     </Grid>
 </Window>
